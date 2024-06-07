@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #20232a;
+      color: #61dafb;
+      font-size: 6rem;
+    }
+    #timer-value {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="timer-value">0</div>
+  <script>
+    let timerValue = 0;
+    setInterval(() => {
+      timerValue++;
+      document.getElementById('timer-value').innerText = timerValue;
+    }, 1000);
+  </script>
+</body>
+</html>
